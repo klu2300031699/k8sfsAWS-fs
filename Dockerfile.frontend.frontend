@@ -3,7 +3,7 @@ FROM node:18 AS build-stage
 WORKDIR /app
 RUN apt-get update && apt-get install -y git
 # Clone frontend repo
-RUN git clone https://github.com/imasheshk/K8sfes104.git .
+RUN git clone https://github.com/klu2300031699/K8sfeAWS-fe.git .
 RUN npm install
 RUN npm run build
 
